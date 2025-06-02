@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tugas Modul 1</title>
+    <style>
+    input[type="text"],
+    input[type="email"]
+    {
+      width: 50%; 
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+    </style>
+</head>
+
+<body>
+    <img src="icon.jpg" alt="icon stitek" style="display: block; margin-left: auto; margin-right: auto; width: 320px; height: 280px;">
+
+    <h1 style="align-items: center; justify-content: center; display: flex;">Halaman Formulir Pendaftaran Mahasiswa Baru</h1>
+
+
+    <form action="submit" method="POST">
+        <legend style="align-items: center; justify-content: center; display: flex; font-size: larger;"> Formulir Pendaftaran Mahasiswa Baru</legend>
+<br>
+        <div style="align-items: center; justify-content: center; display: flex;">
+        <fieldset style="width: 60%; padding: 10px; display: block;  ">
+            <label for="nama" style="display: flex; align-items: center; ">Masukkan Nama Mahasiswa Baru : </label>
+            <input type="text" name="nama" id="nama" placeholder="      Nama Mahasiswa">
+        </fieldset>
+          </div>
+ <br>
+        <div style="align-items: center; justify-content: center; display: flex;">
+        <fieldset style="width: 60%; padding: 10px; display: block; ">
+            <label for="email">Masukkan email anda : </label>
+            <input type="email" name="email" id="email" placeholder="      Email anda" required>
+        </fieldset>
+        </div>
+<br>
+        <div style="align-items: center; justify-content: center; display: flex;">
+        <fieldset style="width: 60%; padding: 10px; display: block; ">
+            <label for="jenis kelamin">Jenis Kelamin : </label>
+            <input type="radio" name="kelamin" id="pria" required>
+            <label for="pria">Laki Laki</label>
+            <input type="radio" name="kelamin" id="wanita">
+            <label for="wanita">Perempuan</label>
+        </fieldset>
+        </div> 
+<br>
+        <div style="align-items: center; justify-content: center; display: flex;">
+        <fieldset style="width: 60%; padding: 10px; display: block; ">
+            <label for="hobi">Hobby Anda ( minimal 2) :</label>
+            <input type="checkbox" name="hobi" id="kebiasaan">
+            <label for="kebiasaan">membaca</label>
+            <input type="checkbox" name="hobi" id="kebiasaan">
+            <label for="kebiasaan">menulis</label>
+            <input type="checkbox" name="hobi" id="kebiasaan">
+            <label for="kebiasaan">Main Game</label>
+            <input type="checkbox" name="hobi" id="kebiasaan">
+            <label for="kebiasaan">Belajar</label>
+        </fieldset>
+    </div>
+<br>
+        <div style="align-items: center; justify-content: center; display: flex;">
+        <fieldset style="width: 60%; padding: 10px; display: block; ">
+            <label for="jurusan">Jurusan Yang dipilih : </label>
+            <select name="jurusan" id="jurusan">
+                <option value="pilih"></option>
+                <option value="TI">Teknik Informatika</option>
+                <option value="TE">Teknik Elektro</option>
+                <option value="Bisdig">Bisnis Digital</option>
+                <option value="SI">Sistem Operasi</option>
+            </select>
+        </fieldset>
+        </div>
+<br>
+        <div style="align-items: center; justify-content: center; display: flex;">
+        <fieldset style="width: 60%; padding: 10px; display: block; ">
+            <label for="alamat" style="display: block;">Alamat anda</label>
+            <textarea name="alamat" id="alamat" rows="4" cols="50" placeholder="Masukkan Alamat Anda"></textarea><br>
+            <button type="submit" style="color: black;">Submit</button>
+        </fieldset>
+        </div>
+<br>
+    </form>
+</body>
+</html>
