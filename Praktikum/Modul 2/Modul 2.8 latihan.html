@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .grid-container{
+                display: grid;
+                grid-template-columns: 100px 200px 100px;
+                grid-template-rows: 50px 100px;
+                gap: 15px;
+                background-color: #f2f2f2;
+                padding: 20px;}
+            .grid-item{
+                background-color: #4CAF50;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                font-size: 20px;}
+
+            .item1{color: crimson;}
+            .item2{color: aqua;}
+            .item3{color: black;}
+            .item4{color: red;}
+            .item5{color: lightblue;}
+            .item6{color: blue;}
+
+            .item3{
+                grid-column: span 2;
+            }
+            </style>
+    </head>
+    <body> 
+        <div class="grid-container">
+            <div class="grid-item item1">Item 1</div>
+            <div class="grid-item item2">Item 2</div>
+            <div class="grid-item item3">Item 3 ( kolom 2)</div>
+            <div class="grid-item item4">Item 4</div>
+            <div class="grid-item item4">Item 5</div>
+            <div class="grid-item item5">Item 6</div>
+        </div>
+
+
+    </body>
+</html>

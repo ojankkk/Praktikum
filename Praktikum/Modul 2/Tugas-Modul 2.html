@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #add8e6;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;}
+        h1 {
+            font-size: 40px;
+            color: #ffffff; }
+        p {
+            background-color: #d3d3d3;
+            color: black;
+            padding: 20px; }
+        .container {
+            max-width: 800px;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            padding: 20px;}
+        .item-box-1, .item-box-2, .item-box-3 {
+            border: 5px solid black;
+            padding: 10px;
+            height: 150px;
+            width: 100%;
+            border-radius: 15px;}
+        .item-box-1{
+            background-color: #ff9999;
+        }
+        .item-box-2 {
+            background-color: #99ff99;}
+        .item-box-3 {
+            background-color: #9999ff;}
+        
+        @media only screen and (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);}}
+        @media only screen and (max-width: 480px) {
+            h1 {
+                font-size: 28px;}
+            .container {
+                grid-template-columns: 1fr;}}
+    </style>
+</head>
+<body>
+    <h1>praktikum CSS</h1>
+    <p>Ini adalah paragraf</p>
+
+    <div class="container">
+        <div class="item-box-1">Box 1</div>
+        <div class="item-box-2">Box 2</div>
+        <div class="item-box-3">Box 3</div>
+    </div>
+</body>
+</html>

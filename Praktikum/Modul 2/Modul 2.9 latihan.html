@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      margin: 0;
+      background-color:lightblue; 
+      color: white;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      padding: 20px;
+    }
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 8px;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 20px;
+    }
+    @media (max-width: 600px) {
+      body {
+        background-color: red; }
+      .grid-container {
+        grid-template-columns: 1fr; }
+      .grid-item {
+        font-size: 1.2rem;}
+      h1 {
+        font-size: 1.8rem;}
+    }
+  </style>
+</head>
+<body>
+  <h1>Halaman Responsif</h1>
+  <div class="grid-container">
+    <div class="grid-item">Item 1</div>
+    <div class="grid-item">Item 2</div>
+    <div class="grid-item">Item 3</div>
+  </div>
+
+</body>
+</html>
