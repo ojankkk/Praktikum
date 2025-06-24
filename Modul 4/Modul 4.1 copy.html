@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan Manipulasi DOM</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1">
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <h1 id="judul">selamat datang di javascript</h1>
+        <button onclick="ubahkalimat()">Ubah Teks Judul</button>
+        <script>
+            function ubahkalimat(){
+            var elemenjudul = document.getElementById("judul");
+            elemenjudul.innerHTML = "teks Berhasil Diubah";
+            elemenjudul.style.color= "blue";
+            elemenjudul.style.fontsize= "36px";
+            }
+        </script>
+    </body>
+</html>
