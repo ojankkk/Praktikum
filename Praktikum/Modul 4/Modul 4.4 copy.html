@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Latihan Perulangan</title></head>
+<body>
+  <h2>Daftar temen</h2>
+  <ul id="daftar-temen">
+    <!-- Konten akan diisi oleh JavaScript -->
+  </ul>
+  <script>
+    var temen = ["pesal", "wenka", "iki", "belva", "ammar"];
+    var daftarElement = document.getElementById("daftar-temen");
+    for (let i = 0; i < temen.length; i++) {
+      daftarElement.innerHTML += "<li>" + temen[i] + "</li>";
+    }
+  </script>
+</body>
+</html>
